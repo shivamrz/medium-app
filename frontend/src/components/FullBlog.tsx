@@ -27,7 +27,7 @@ export const FullBlog=({ blog, Published_date }:{blog : Blog, Published_date:str
                         </div>
                         <div>
                             <div className="text-xl font-bold ">
-                                {blog.author.name || "Anonymous"}
+                                {blog.author.name }
                             </div>
                             <div className="pt-2 text-slate-500">
                                 Master of mirth, purveyor of puns, and the
