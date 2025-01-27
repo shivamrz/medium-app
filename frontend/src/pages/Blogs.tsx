@@ -7,7 +7,7 @@ export const Blogs= ()=>{
     const {loading, blogs}=useBlogs();
     if(loading){
         return <div>
-            <Appbar/>
+            <Appbar />
             <div className="pt-2 flex justify-center">
                 <div>
                     <BlogSkeleton/>

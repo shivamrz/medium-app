@@ -12,7 +12,7 @@ export const Blog= ()=>{
     });
     if(!blog || loading){
         return <div> 
-            
+            <Appbar/>
             <div className="h-screen flex flex-col justify-center">
                 <div className="flex justify-center">
                     <Spinner/>
@@ -21,6 +21,7 @@ export const Blog= ()=>{
         </div>
     }
     return <div>
+        
         <FullBlog blog={blog} Published_date="January 24, 2025"/>
     </div>
 }

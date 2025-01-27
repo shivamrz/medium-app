@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom"
 import { Avatar } from "./BlogCard"
 import img from '../assets/download.png';
-import { Blog } from "../hooks";
 
-export const Appbar=({blog}:{blog:Blog})=>{
+export const Appbar=()=>{
     return <div className="border-b flex justify-between px-10 py-4">
         <Link to={'/blogs'} className="flex flex-col justify-center cursor-pointer text-xl font-extrabold">
             <div className=" flex text-xl">
@@ -19,7 +18,7 @@ export const Appbar=({blog}:{blog:Blog})=>{
                     Publish
                 </button>
             </Link>
-            <Avatar size="big" Name={blog.author.name}/>
+            <Avatar size="big" Name={"Unknown"}/>
         </div>
     </div>
 }
